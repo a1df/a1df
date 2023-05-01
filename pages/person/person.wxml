@@ -1,0 +1,74 @@
+<view class='typeList' wx:if="{{isDep}}">
+    <view class="paihangbang">排行榜</view>
+    <view class="delete" bindtap="handledelete">×</view>
+    <view class='wrap'>
+        <view class="wrap_1">
+            <image class="first" src="../../images_1/first.png"></image>
+            <image class="logo1" src="{{ne[0].logopath}}"></image>
+            <view class="Message">
+                <view class="place">{{ne[0].Place}}</view>
+                <view class="Leave_Message">名言:{{ne[0].Leave_Message}}</view>
+            </view>
+            <view class="grade">0分</view>
+        </view>
+        <view class="line"><image src="../../images_1/line.png"></image></view>
+        <view class="wrap_1">
+            <image class="first" src="../../images_1/second.png"></image>
+            <!-- <image class="logo1" src="{{ne[0].logopath}}"></image>
+            <view class="Message">
+                <view class="place">{{ne[0].Place}}</view>
+                <view class="Leave_Message">名言:{{ne[0].Leave_Message}}</view>
+            </view>
+            <view class="grade">0分</view> -->
+        </view>
+        <view class="line"><image src="../../images_1/line.png"></image></view>
+        <view class="wrap_1">
+            <image class="first" src="../../images_1/third.png"></image>
+            <!-- <image class="logo1" src="{{ne[0].logopath}}"></image>
+            <view class="Message">
+                <view class="place">{{ne[0].Place}}</view>
+                <view class="Leave_Message">名言:{{ne[0].Leave_Message}}</view>
+            </view>
+            <view class="grade">0分</view> -->
+        </view>
+        <view class="line"><image src="../../images_1/line.png"></image></view>
+    </view>         
+       
+    <view class="myself">
+        <view class="wrap_11">
+            <view class="myself_paiming">
+                <view>我的排名</view>
+                <view style="text-align:center;">1</view>
+            </view>
+            <image class="logo11" src="{{ne[0].logopath}}"></image>
+            <view class="Message1">
+                <view class="place1">{{ne[0].Place}}</view>
+                <view class="Leave_Message1">名言:{{ne[0].Leave_Message}}</view>
+            </view>
+            <view class="grade1">0分</view>
+        </view>
+    </view>    
+    <view class="kind">
+        <view class="kind_1"><image src="../../images/football.jpg"></image></view>
+        <view><image src="../../images/volleyball.jpg"></image></view>
+        <view><image src="../../images/basketball.jpg"></image></view>
+        <view><image src="../../images/pingpang.jpg"></image></view>
+        <view><image src="../../images/badminton.jpg"></image></view>
+        <view><image src="../../images/tennis.jpg"></image></view>
+    </view>
+</view>
+<image src="../../images_1/thumb-1920-552883.jpg"  class="imgbackgroup"></image>
+<view id="userinfo">
+    <image src="{{userinfo[0].Img}}" mode="widthFix" bindtap="handleChange"></image>
+    <view style="font-weight: bold; font-size: 50rpx;">{{userinfo[0].nickName}}</view>
+</view>
+<view class="contain"  bindtap="hanldePaiHang">
+    <view class="container_1"><image src="../../images/rongyu.jpg" ></image></view>
+    <view class="container_2">排行榜</view>
+    <view class="paihangxixinxi"> 
+        
+    </view>
+</view>
+<view class="demo2">
+    <calendar cell-size="30" days-color="{{demo2_days_style}}" header-style="demo2-header" board-style="demo2-board"  weeks-type="full-en" show-more-days="{{true}}"/>
+</view>

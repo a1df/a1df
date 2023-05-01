@@ -1,0 +1,104 @@
+<!--pages/called/called.wxml-->
+<view class='typeListBox' wx:if="{{isDep}}">
+    <view class='wrap'>
+      <view class='checkbox-con'>
+        <view class="checkbox_text">选择篮球场场地</view>
+          <checkbox-group bindchange="checkboxChange" class="checkbox-group">
+            <view wx:for="{{items}}" wx:key="index">
+              <label data-index="{{index}}">
+                <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+                 {{item.name}}
+              </label>
+             
+            </view>
+          </checkbox-group>
+      </view>
+      <view class='btn1'>
+            <button class='bgFFF' bindtap='cancel' size="mini" type="primary">取消</button>
+            <button class='bgTTT' bindtap='confirm' size="mini" type="primary">确定</button>
+      </view>
+    </view>                
+</view>
+<view class="top">创建活动</view>
+<form bindsubmit="btnsub">
+    <view class="called_time">
+        <view class="times">选择约定时间</view>
+        <!-- <input type="text" name="Time" placeholder="请选择约定时间" /> -->
+        <view class="section_two">
+            <picker mode="date" value="{{date}}" start="2023-04-17" end="2024-03-20" bindchange="bindDateChange">
+                <view class="picker" >
+                {{date}}
+                </view>
+            </picker>
+            <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+            <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange" >
+                <view class="picker" >
+                {{time}}
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="called_place">
+        <view class="place">选择活动形式</view>
+        <picker bindchange="bindPickerForm" value="{{index}}" range="{{array}}">
+                <view class="picker1">
+                        {{array[index]}}
+                </view>
+            </picker>
+        <!-- <image src="../../images/location.png"  style="width: 70rpx;height: 70rpx;"></image> -->
+    </view>
+    <view class="other">
+        <view class="message">留言</view>
+        <input type="text" name="Leave_Message" placeholder="留下你希望给对方的话吧" />
+    </view>
+    <view class="called_form">
+         <view class="put">
+                <view class="form">请选择活动</view>
+                <!-- <input type="text" name="choose_Message" placeholder="请选择运动方式" /> -->
+        </view>
+        <view class="form_table">
+
+            <view class="form_table_1">
+                <view class="form1"  bindtap="handle_one">
+                    <!-- <view class="math">①</view> -->
+                    <image src="../../images/run.jpg" ></image>
+                </view>
+                <view class="form1" bindtap="handle_two">
+                    <!-- <view class="math">②</view> -->
+                    <image src="../../images/badminton.jpg" ></image>
+                </view>
+           
+                <view class="form1" id="three" bindtap="handle_three"  catchtap='isDep'>
+                    <!-- <view class="math">③</view> -->
+                    <image src="../../images/basketball.jpg" ></image>
+                </view>
+            </view>
+            <view class="form_table_2" >
+                <view class="form1" bindtap="handle_four">
+                    <!-- <view class="math">④</view> -->
+                    <image src="../../images/pingpang.jpg" ></image>
+                </view>
+                <view class="form1" bindtap="handle_five">
+                    <image src="../../images/volleyball.jpg" ></image>
+                </view>
+                <view class="form1" bindtap="handle_six"> 
+                    <!-- <view class="math">⑥</view> -->
+                    <image src="../../images/tennis.jpg" ></image>
+                </view>
+            
+            </view>
+            <view class=" form_table_3">
+                <view class="form1" bindtap="handle_seven"> 
+                    <!-- <view class="math">⑦</view> -->
+                    <image src="../../images/swim.jpg" style="width: 100rpx; height: 100rpx; border-radius:20%;"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="begin">
+        <button  class="btn_one" type="primary" form-type="submit" >发起</button>
+    </view>
+</form>
+
+
+

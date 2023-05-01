@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="title">集Health</view>
+    <view class="message">信息</view>
+    <view class="out_box"> 
+        <view>手机号</view>
+        <input type="text" name="Leave_Message" placeholder="请输入您的电话号码" bindinput="formInputChange"/>
+    </view>
+    <button bindtap="handle" type="primary" size="mini">提交</button>
+</view>

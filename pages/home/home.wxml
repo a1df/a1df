@@ -1,0 +1,55 @@
+<view class="container">
+   <map 
+    wx:if="{{ifshow}}"
+     style="height: 100%;width: 100%; position: absolute; top: 0;"
+     latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    markers="{{markers}}" scale="14" show-location
+    scale="16"
+    bindmarkertap="bindtapMap" 
+    >
+   </map>
+</view>
+<view class="middle-box">
+    <view wx:if="{{jump}}" class="middle_b">
+        <view  wx:for="{{ne}}"  wx:key="index" >
+            <view class="middle_box_1" wx:if="{{index==ne.length-1}}">
+               <view>约定时间：{{item.Date}}   {{item.Time}}</view> 
+               <view>活动类型：{{item.Place}}</view> 
+                <view>留言：{{item.Leave_Message}}</view>
+                <view>活动形式：{{item.choose_Message}}<span wx:if="{{ifhave}}">({{item.kind}})</span></view>
+                <view>活动发起时间：<span style="font-size: 35rpx;float: right; margin-right: 30rpx; line-height: 70rpx;">{{item.currentTime}}</span></view>
+                
+                <view class="xixi">
+                    <view wx:if="{{item.ifFinish}}" bindtap="handlecommunicate" style="font-weight: normal;">
+                        (已接取，点击跳转)
+                    </view>
+                    <view wx:else style="font-weight: normal;">
+                        (未接取)
+                    </view>
+                    <view wx:if="{{ifTimeout}}" class="xixi_1" style="font-weight: normal;">
+                        (已超时)
+                    </view>
+                    <view wx:else>
+                    </view>
+                </view>
+            </view>
+           
+            
+        </view>
+        <view class="delete" bindtap="handledelete">×</view>
+    </view>
+    <view wx:else class="middle_b2">
+        快去发起召集寻找伙伴加入吧！！！
+    </view>
+</view>  
+
+ <view class="btn">
+    <button  type="primary" bindtap="handletoget" class="btn_1">发起召集</button>
+</view>
+<view class="bottom">
+        <view  class="bottom1">
+            <view bindtap="acquireData">发起记录</view>
+            <view bindtap="Friend">您的好友</view>
+        </view>
+</view>

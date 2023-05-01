@@ -1,0 +1,79 @@
+{
+  "pages":[
+    "pages/fitness/fitness",
+    "pages/home/home",
+    "pages/person/person",
+    "pages/auth/auth",
+    "pages/called/called",
+    "pages/setoutRecord/setoutRecord",
+    "pages/Activity_0/Activity_0",
+    "pages/Activity_1/Activity_1",
+    "pages/Activity_2/Activity_2",
+    "pages/Activity_3/Activity_3",
+    "pages/Activity_4/Activity_4",
+    "pages/Activity_5/Activity_5",
+    "pages/Activity_6/Activity_6",
+    "pages/Activity_7/Activity_7",
+    "pages/communicate/communicate",
+    "pages/communicating/communicating",
+    "pages/teamCompetition/teamCompetition",
+    "pages/football/football",
+    "pages/volleyball/volleyball",
+    "pages/basketball/basketball",
+    "pages/pingpang/pingpang",
+    "pages/badminton/badminton",
+    "pages/tennis/tennis",
+    "pages/telform/telform"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#14c145",
+    "navigationBarTitleText": "集Health",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+      "list": [
+          {
+          "pagePath": "pages/fitness/fitness",
+          "text": "健康安全",
+          "iconPath": "images/stronger.jpg",
+          "selectedIconPath": "images/stronger_light.jpg"
+         },
+         {
+            "pagePath": "pages/teamCompetition/teamCompetition",
+            "text": "团队赛",
+            "iconPath": "images/vs.jpg",
+            "selectedIconPath": "images/vs1.jpg"
+           },
+         {
+            "pagePath": "pages/home/home",
+            "text": "主页",
+            "iconPath": "images/home.png",
+            "selectedIconPath": "images/home_light.png"
+           },
+           {
+            "pagePath": "pages/person/person",
+            "text": "个人",
+            "iconPath": "images/my.png",
+            "selectedIconPath": "images/my_light.png"
+           }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "calendar": {
+        "version": "1.1.0",
+        "provider": "wx92c68dae5a8bb046"
+    }
+}
+
+}

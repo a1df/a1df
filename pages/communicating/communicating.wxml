@@ -1,0 +1,28 @@
+<image class="img_box" src="../../images_1/yundong.jpg">
+ 
+</image>
+<view class="otherName">
+         {{qitaren[0].nickName}}
+</view>
+<view class="max_big">
+        <scroll-view scroll-y="true" class="scroll">
+            <view class="max_box">
+            <view class="for"  wx:for="{{message}}" wx:key="_id">
+                <view class="box">
+                    <view class="time">{{item.NowTime}}</view>
+                    <image class="img" src="{{item.userWo_Img}}"></image>
+                    <!-- <view class="container"> -->
+                    <text class="message">{{item.userWo_Message.record}}</text>
+                    <!-- </view> -->
+                </view>
+            </view>
+          </view>
+        </scroll-view>
+</view>
+<form bindsubmit="formSubmit">
+    <view class="form">
+        <input placeholder="发送点什么吧"  type="text" name="record"/>
+        <button class="pub-button" form-type="submit" type="primary" size="mini" bindtap="faSong">发送</button>
+    </view>
+</form>
+

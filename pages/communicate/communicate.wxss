@@ -1,0 +1,33 @@
+/* pages/communicate/communicate.wxss */
+#userinfo{
+    position: relative;
+    height: 300rpx;
+    width: 100%;
+    border: 10rpx double grey;
+    border-radius: 5%;
+    box-shadow: grey;
+    margin-top: 10rpx;
+    background-color: cadetblue;
+}
+#userinfo image{
+    margin-top: 20rpx;
+    position: absolute;
+    left: 50rpx;
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 100rpx;
+  }
+.name{
+    position: absolute;
+    left: 70rpx;
+    bottom: 20rpx;
+    font-weight: bold;
+}
+.event{
+    margin-left:38%;
+    margin-top: 60rpx;
+}
+.tele{
+    margin-left: 38%;
+    margin-top: 20rpx;
+}

@@ -1,0 +1,8 @@
+<view id="userinfo" bindtap="handlecommunicating">
+    <image src="{{userinfo[0].Img}}" mode="widthFix" bindtap="handleChange"></image>
+    <view class="name">{{userinfo[0].nickName}}</view>
+    <view class="event">事件：{{ne[0].choose_Message}}</view>
+    <view class="tele">
+        电话：{{tel}}
+    </view>
+</view>

@@ -1,0 +1,88 @@
+<view class="top_big_box">
+    <view class="text">您参与的团队 <span class="ifCreate" catchtap='isDep'  wx:if="{{isShow}}">+</span></view>
+    <view wx:if="{{isShow}}" class="hasTeam">
+            <view class="team_big_box" wx:if="{{team_message_football!=null}}">
+                <span class="span0">{{kind_message_football.kind}}</span>
+                <span class="span1">{{team_message_football.Place}}</span>
+                <view class="line"></view>
+                <image src="{{team_message_football.logopath}}"></image>
+                <span class="span2">口号：{{team_message_football.Leave_Message}}</span>
+                <span class="span3">创建时间：{{kind_message_football.buildTime}}</span>
+            </view>
+            <view class="team_big_box" wx:if="{{team_message_volleyball!=null}}">
+                <span class="span0">{{kind_message_volleyball.kind}}</span>
+                <span class="span1">{{team_message_volleyball.Place}}</span>
+                <view class="line"></view>
+                <image src="{{team_message_volleyball.logopath}}"></image>
+                <span class="span2">口号：{{team_message_volleyball.Leave_Message}}</span>
+                <span class="span3">创建时间：{{kind_message_volleyball.buildTime}}</span>
+            </view>
+            <view class="team_big_box" wx:if="{{team_message_tennis!=null}}">
+                <span class="span0">{{kind_message_tennis.kind}}</span>
+                <span class="span1">{{team_message_tennis.Place}}</span>
+                <view class="line"></view>
+                <image src="{{team_message_tennis.logopath}}"></image>
+                <span class="span2">口号：{{team_message_tennis.Leave_Message}}</span>
+                <span class="span3">创建时间：{{kind_message_tennis.buildTime}}</span>
+            </view>
+            <view class="team_big_box" wx:if="{{team_message_badminton!=null}}">
+                <span class="span0">{{kind_message_badminton.kind}}</span>
+                <span class="span1">{{team_message_badminton.Place}}</span>
+                <view class="line"></view>
+                <image src="{{team_message_badminton.logopath}}"></image>
+                <span class="span2">口号：{{team_message_badminton.Leave_Message}}</span>
+                <span class="span3">创建时间：{{kind_message_badminton.buildTime}}</span>
+            </view>
+            <view class="team_big_box" wx:if="{{team_message_basketball!=null}}">
+                <span class="span0">{{kind_message_basketball.kind}}</span>
+                <span class="span1">{{team_message_basketball.Place}}</span>
+                <view class="line"></view>
+                <image src="{{team_message_basketball.logopath}}"></image>
+                <span class="span2">口号：{{team_message_basketball.Leave_Message}}</span>
+                <span class="span3">创建时间：{{kind_message_basketball.buildTime}}</span>
+            </view>
+            <view class="team_big_box" wx:if="{{team_message_pingpang!=null}}">
+                <span class="span0">{{kind_message_pingpang.kind}}</span>
+                <span class="span1">{{team_message_pingpang.Place}}</span>
+                <view class="line"></view>
+                <image src="{{team_message_pingpang.logopath}}"></image>
+                <span class="span2">口号：{{team_message_pingpang.Leave_Message}}</span>
+                <span class="span3">创建时间：{{kind_message_pingpang.buildTime}}</span>
+            </view>
+    </view>
+    <view wx:else class="notTeam">
+        您还未有团队，快来创建一个吧
+    </view>
+</view>
+<view class="bottom_big_box" wx:if="{{kind_message.length==0||isDep}}">
+ <view class="text1">请选择您要创建的团队类型 <span wx:if="{{isDep}}" catchtap='isDep_shut'>×</span></view>
+        <view class="form_table">
+        <view class="form_table_1">
+            <view class="form1"  bindtap="handle_one">
+                <image src="../../images/football.jpg" ></image>
+            </view>
+            <view class="form1" bindtap="handle_two">
+                <image src="../../images/volleyball.jpg" ></image>
+            </view>
+        
+            <view class="form1" id="three" bindtap="handle_three" >
+                <image src="../../images/basketball.jpg" ></image>
+            </view>
+        </view>
+        <view class="form_table_2" >
+            <view class="form1" bindtap="handle_four">
+    
+                <image src="../../images/pingpang.jpg" ></image>
+            </view>
+    
+            <view class="form1" bindtap="handle_five">
+                <image src="../../images/badminton.jpg" ></image>
+            </view>
+            <view class="form1" bindtap="handle_six"> 
+                <image src="../../images/tennis.jpg" ></image>
+            </view>
+        
+        </view>
+            
+    </view>
+</view> 

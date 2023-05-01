@@ -1,0 +1,117 @@
+page{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: relative;
+    display: block;
+    height: 40%;
+    border: 10rpx solid gainsboro;
+}
+cover-view {
+    position: absolute;
+    top: calc(50% );
+    left: calc(50% );
+    /* opacity: .7; */
+  }
+  .middle-box{
+  /* margin-top: 30rpx; */
+        /* background-color: aqua; */
+      position: relative;
+      display: flex;
+    /* overflow: hidden; */
+      width: 98%;
+      height: 40%;
+      
+      border: 10rpx double gainsboro;
+      border-radius: 10rpx;
+      /* margin: 10rpx auto; */
+  }
+  .bottom{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* background-color: aqua; */
+      height: 10%;
+  }
+  .bottom1{
+      font-weight: bold;
+      font-size: 30rpx;
+      display: block;
+      line-height: 400%;
+      width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around; 
+ }
+.btn{
+    position: absolute;
+    /* bottom: 10%; */
+    width: 100%;
+    /* background-color: grey; */
+    margin: 10rpx auto;
+}
+ .bottom1 view:hover{
+    /* background-color: gainsboro; */
+    color: gainsboro;
+}
+.middle_box_1{
+    /* background-color: brown; */
+    width: 102%;
+    height:140%;
+    border: 1rpx solid grey;
+    border-radius: 10rpx;
+    margin-bottom: 5rpx;
+}
+.middle_box_1  view{
+    font-weight: bold;
+     font-size: 50rpx;
+    margin-top: 2%;
+    margin-bottom: 10rpx;
+}
+.jump{
+    position: relative;
+    z-index: 1000;
+}
+.delete{
+    position: absolute;
+    top: 10rpx;
+    left: 90%;
+    font-size: 50rpx;
+    margin-right: 10rpx;
+    border: 1rpx black solid;
+    height: 55rpx;
+    width:55rpx;
+    text-align: center;
+    line-height: 55rpx;
+    border-radius: 10rpx;
+}
+.delete:hover{
+    background-color: gainsboro;
+}
+.middle_b2{
+    /* background-color: blue; */
+    flex: 1;
+    display: block;
+  font-size: 40rpx;
+  font-weight: bold;
+  width: 100%;
+  height:100%;
+  /* background-color: aqua; */
+  text-align: center;
+  /* position: absolute; */
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+.xixi{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin-right: 50rpx;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.xixi_1{
+    color: rgb(99, 6, 6) ;
+    font-weight: normal;
+}

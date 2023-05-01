@@ -1,0 +1,60 @@
+<view class='typeListBox' wx:if="{{isDep}}">
+    <view class='wrap'>
+      <view class='checkbox-con'>
+      <view class='checkbox-con1'>
+                <view class="logo_one" bindtap="logo1">
+                    <image src="../../images/logo1.png"></image>
+                </view>
+                <view class="logo_two" bindtap="logo2">
+                    <image src="../../images/logo2.png"></image>
+                </view>
+      </view>
+        <view class='checkbox-con2'>
+                     <view class="logo_three" bindtap="logo3">
+                        <image src="../../images/logo3.png"></image>
+                    </view>
+                    <view class="logo_four" bindtap="logo4">
+                        <image src="../../images/logo4.png"></image>
+                    </view>
+        </view>
+           
+      </view>
+      <view class='btn1'>
+            <button class='bgFFF' bindtap='cancel' size="mini" type="primary">取消</button>
+            <button class='bgTTT' bindtap='confirm' size="mini" type="primary">确定</button>
+      </view>
+    </view>                
+</view>
+<view class="top">创建团队</view>
+<form bindsubmit="btnsub">
+        <view class="called_place">
+            <view class="place">队名</view>
+            <input type="text" name="Place" placeholder="创建一个响亮的队名吧" />
+        </view>
+
+        <view class="section_two">
+            <view class="times">选择人数</view>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                        {{array[index]}}
+                </view>
+            </picker>
+        </view>
+
+    <view class="other">
+        <view class="message">团队口号</view>
+        <input type="text" name="Leave_Message" placeholder="写下本队的口号吧" />
+    </view>
+    <view class="choose_img">
+        <view class="choose_picture">请选择团队的队徽</view>
+       <view class="plus" bindtap="handleinsert" catchtap='isDep'>+</view>
+    </view>
+    <view class="final_logo" wx:if="{{isShow}}">
+        <view class="logo">
+            <image src="{{imgpath}}" style="width: 300rpx; height: 300rpx;"></image>
+        </view>
+    </view>
+    <view class="begin">
+        <button  class="btn_one" type="primary" form-type="submit" >创建</button>
+    </view>
+</form>

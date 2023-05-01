@@ -1,0 +1,184 @@
+/* pages/called/called.wxss */
+.top{
+    border-top: 1rpx solid grey;
+    border-bottom: 1rpx solid grey;
+    padding:50rpx;
+    padding-left:20rpx ;
+    font-weight: bold;
+    font-size: 50rpx;
+}
+.times{
+    line-height: 100rpx;
+    margin-left: 30rpx;
+    font-size: 50rpx;
+}
+.section_two{
+    border-top: 1rpx solid grey;
+    display: flex;
+    right: 30rpx;
+    line-height: 100rpx;
+    justify-content: space-between;
+}
+.picker{
+    margin-right: 40rpx;
+}
+.choose_img{
+    border-top: 1rpx solid grey;
+    display: flex;
+    right: 30rpx;
+    line-height: 100rpx;
+}
+.choose_picture{
+    line-height: 100rpx;
+    margin-left: 30rpx;
+}
+
+.plus{
+    margin-left: 50rpx;
+    margin-top: 25rpx;
+    display: block;
+    width: 50rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border: 1rpx solid grey;
+    background-color: #E4E4E4;
+}
+.called_place{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30rpx;
+    /* border-top:1rpx solid grey; */
+}
+.called_place  .place{
+    line-height: 100rpx;
+    margin-left: 30rpx;
+    font-size: 45rpx;
+}
+.called_place input{
+    margin-top: 25rpx;
+    /* margin-left:35%; */
+    color: grey;
+    background-color:  white;
+    text-align: right;
+    margin-left: 30rpx;
+}
+.other{
+    border-top:1rpx solid grey;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+   /* margin-right: 30rpx; */
+
+}
+.other .message{
+    line-height: 100rpx;
+    margin-left: 30rpx;
+    font-size: 50rpx;
+}
+.other input{
+    margin-top: 25rpx;
+    margin-right: 30rpx;
+    /* margin-left:200rpx; */
+     color: grey;
+     background-color:  white;
+     text-align: right;
+}
+.typeListBox{
+    border-top: 1rpx solid black;
+    position: absolute;
+    width: 100%;
+    height: 61%;
+    bottom: 0;
+    background-color: rgb(81, 99, 99);
+    z-index:99999;
+    border-radius: 0.3;
+}
+.checkbox-con{
+    width: 100%;
+    height: 100%;
+   
+}
+.checkbox-con1{
+    margin:5% 10% ;
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox-con2{
+    margin:5% 10% ;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_one{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border: 20rpx double grey;
+}
+.logo_one:hover{
+    background-color: orange;
+}
+.logo_three:hover{
+    background-color: orange;
+}
+.logo_two:hover{
+    background-color: orange;
+}
+.logo_four:hover{
+    background-color: orange;
+}
+.logo_one image{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.logo_two{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border: 20rpx double grey;
+}
+.logo_two image{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.logo_three{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border: 20rpx double grey;
+}
+.logo_three image{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.logo_four{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    border: 20rpx double grey;
+}
+.logo_four image{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 300rpx;
+    height: 300rpx;
+    border-radius: 50%;
+    margin-top:40rpx ;
+    margin-left: 40rpx;
+}
+.btn1{
+    width: 40%;
+    margin-right: 10%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+.begin{
+    margin-top: 100rpx;
+}

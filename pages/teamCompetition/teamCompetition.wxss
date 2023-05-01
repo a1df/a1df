@@ -1,0 +1,180 @@
+page{
+    height: 100%;
+    width: 100%;
+}
+.top_big_box{
+    height: 40%;
+    width: 100%;
+ 
+}
+.top_big_box .text{
+    border-top: 1rpx solid grey;
+    /* border-bottom: 1rpx solid grey; */
+    padding:30rpx;
+    padding-left:20rpx ;
+    font-weight: bold;
+    font-size: 50rpx;
+    
+}
+.hasTeam{
+    display: block;
+    width: 95%;
+    border: 10rpx double gainsboro;
+    border-radius: 30rpx;
+    background-color:#312F33;
+    margin: 20rpx;
+}
+.team_big_box{
+    background-color: #F1E6D7;
+    position: relative;
+    width: 90%;
+    height: 200rpx;
+    border: 10rpx double orange;
+    border-radius: 20rpx;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+.ifCreate{
+        display: block;
+        width: 100rpx;
+        height: 100rpx;
+        line-height: 100rpx;
+        text-align: center;
+        border: 9rpx double grey;
+        border-radius: 50%;
+        background-color: #E4E4E4;
+        position: fixed;
+        top: 20rpx;
+        right: 20rpx;
+        font-size: 70rpx;
+}
+.ifCreate:hover{
+    background-color: #2E2E2E;
+}
+.line{
+    position: absolute;
+    top: 80rpx;
+    left: 160rpx;
+    width: 62%;
+    border-bottom: 8rpx solid grey;
+}
+.team_big_box .span0{
+    position: absolute;
+    bottom: 5rpx;
+    left: 40rpx;
+}
+.team_big_box .span1{
+    position: absolute;
+    top: 10rpx;
+    left: 160rpx;
+    font-size: 50rpx;
+    font-weight: bold;
+}
+.team_big_box .span2{
+    position: absolute;
+    top: 100rpx;
+    left: 160rpx;
+    font-size: 30rpx;
+}
+.team_big_box .span3{
+    position: absolute;
+    top: 140rpx;
+    left: 160rpx;
+    font-size: 30rpx;
+}
+.team_big_box image{
+   width: 140rpx;
+   height:140rpx;
+   border-radius: 50%;
+   margin: 10rpx;
+}
+.notTeam{
+     background-color: #42A5F5;
+     display: block;
+   font-size: 40rpx;
+   font-weight: bold;
+   width: 100%;
+   /* height: 100%; */
+    padding-top: 14% ;
+    padding-bottom: 14%;
+   /* background-color: aqua; */
+   text-align: center;
+   border: 10rpx double gainsboro;
+   border-radius: 30rpx;
+   color: khaki;
+}
+.text1{
+    /* border-top: 1rpx solid grey; */
+    border-bottom: 1rpx solid grey;
+    padding:30rpx;
+    padding-left:20rpx ;
+    font-weight: bold;
+    font-size: 40rpx;
+}
+.text1 span{
+    font-size: 50rpx;
+    font-weight: bold;
+    border: 9rpx solid grey;
+    background-color: #6598D7;
+   position: absolute;
+    right: 30rpx;
+    top: 30rpx;
+    height: 50rpx;
+    width: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-radius: 20rpx;
+}
+.text1 span:hover{
+    background-color: thistle;
+}
+.bottom_big_box{
+    /* background-color: aqua; */
+    height: 60%;
+    position: relative;
+    background-color: white;
+}
+.form_table{
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.form_table .form_table_1{
+   margin: 10% auto;
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+.form_table .form_table_2{
+    margin-top: 20rpx;
+    width: 100%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.form1{
+    width: 30%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+
+}
+.form1 image{
+    width: 100%;
+     height: 100%;
+    border-radius:50%;
+    /* margin: 10rpx; */
+}
+/* .form1 .math{
+    font-size: 50rpx;
+} */
+.form1:hover{
+    border-radius: 50%;
+    background-color: hotpink;
+    box-shadow: 10rpx 10rpx 1rpx grey;
+}

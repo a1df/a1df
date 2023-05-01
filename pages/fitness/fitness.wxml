@@ -1,0 +1,31 @@
+<view class='typeList' wx:if="{{isDep}}">
+    <view class='wrap'>
+        <view class="delete" bindtap="handledelete">×</view>
+      <view class='checkbox-con'>
+            <view class="kind">受伤类型：{{query.kind}}</view>
+             <view class="small_box">
+                    <view class="line">|</view>
+                    <view class="define">原因：</view>
+            </view>
+            <text decode="{{true}}" space="{{true}}">&ensp;     &ensp;</text>{{query.define}}
+            <view class="way">●解决方法：</view>
+            <text decode="{{true}}" space="{{true}}">&ensp;     &ensp;</text>{{query.way}}
+      </view>
+    </view>                
+</view>
+<view class="query">
+        <input type="text" placeholder="请查询" bindconfirm="search"/>
+</view>
+<view class="big_box">
+    <view class="outer_box" wx:for="{{message}}" wx:key="index">
+        <view class="kind">受伤类型：{{item.kind}}</view>
+        <view class="small_box">
+            <view class="line">|</view>
+            <view class="define">原因：</view>
+        </view>
+            <text decode="{{true}}" space="{{true}}">&ensp;     &ensp;</text>{{item.define}}
+        <view class="way">●解决方法：</view>
+        <text decode="{{true}}" space="{{true}}">&ensp;     &ensp;</text>{{item.way}}
+    </view> 
+</view>
+
